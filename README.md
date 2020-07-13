@@ -1,7 +1,7 @@
 # CryoHudMinecraftMod
 This mod was written in java using the forge mod libraries. It is designed to give the user extra information when they are playing to avoid needing to open extra menus and to find what they need.
 
-![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenshots/ex.png "CryoHud")
+![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/ex.png "CryoHud")
 
 ## Features
 ### Configuration
