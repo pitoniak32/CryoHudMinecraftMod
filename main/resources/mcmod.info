@@ -1,0 +1,16 @@
+[
+{
+  "modid": "CryoHud",
+  "name": "Cryo Hud",
+  "description": "Gives Player HUD with customization.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Cryoexn"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
