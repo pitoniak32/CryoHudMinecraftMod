@@ -5,27 +5,31 @@ This mod was written in java using the forge mod libraries. It is designed to gi
 
 ## Features
 
-### Frames per second
-It allows them to see their Fps (Frames per second)
+### Configuration
+all components can be moved around anywhere on the screen with a programmable hot key in the Minecraft controls setting (Default Y). All text items can be given a slightly translucent black background, and the text color can be changed to any hex value omitting the prepended '0x'
 
-### RAM usage percentage
+### HUD Mods
 
-RAM usage
-### Armor pieces
-Armor, 
+#### Frames per second
+Allows for the user to see their Fps (Frames Per Second) without opening the F3 Debug menu.
 
-### Item currently being held
-Held item, 
+#### RAM usage percentage
+Allows the user to see the % Usage of their allocated RAM for minecraft without opening the F3 Debug menu. This can help combat getting frame drops unexpectedly due to memory reaching 100% and give you a heads up before.
 
-### Arrow Counter
-Number of arrows in their inventory
+#### Armor pieces
+Displays the armor pieces that the player is currently wearing. The player can see what armor they have on without opening thier inventory.
 
-### Coordinates
-Coordinates
+#### Item currently being held
+Displays the item the player is currently holding in their hand.
 
-### Compass facing direction
-Facing direction. 
+#### Arrow Counter
+Displays the Number of arrows in the players inventory. This allows the user to get a heads up if they are low on arrows in a pvp situation.
 
+#### Coordinates 
+Allows the user to see their X Y Z position in the world without opening their F3 Debug menu.
 
-### Hypixel Pit Night Quests
+#### Compass facing direction
+Allows the user to see their Facing Direction in the world without opening their F3 Debug menu.
+
+#### Hypixel Pit Night Quests
 There is also a feature for quests on a certain mini game that displays a counter so the player knows how long they have to do the quest.
