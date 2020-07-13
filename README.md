@@ -1,15 +1,14 @@
 # CryoHudMinecraftMod
 This mod was written in java using the forge mod libraries. It is designed to give the user extra information when they are playing to avoid needing to open extra menus and to find what they need.
 
-![](https://gyazo.com/9acd2ca209c40cc19792ced5a61b2ddd)
+![modscreenie](https://gyazo.com/9acd2ca209c40cc19792ced5a61b2ddd "CryoHud")
 
 ## Features
-
 ### Configuration
 all components can be moved around anywhere on the screen with a programmable hot key in the Minecraft controls setting (Default Y). All text items can be given a slightly translucent black background, and the text color can be changed to any hex value omitting the prepended '0x'
 
 ### HUD Mods
-
+--
 #### Frames per second
 Allows for the user to see their Fps (Frames Per Second) without opening the F3 Debug menu.
 
