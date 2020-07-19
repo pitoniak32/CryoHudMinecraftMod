@@ -6,8 +6,10 @@ This mod was written in java using the forge mod libraries. It is designed to gi
 ## Features
 ### Configuration
 all components can be moved around anywhere on the screen with a programmable hot key in the Minecraft controls setting (Default Y). All text items can be given a slightly translucent black background, and the text color can be changed to any hex value omitting the prepended '0x'
-
-![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/exconf.png "CryoHud")
+![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/exconfmenu.png "Hud Menu")
+![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/guihudmenu.png "Mod List")
+![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/exconf.png "Mod Positioning")
+![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/guimodsettings.png "Mod Settings")
 
 ### HUD Mods
 #### Frames per second
