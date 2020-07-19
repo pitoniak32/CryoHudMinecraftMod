@@ -112,7 +112,7 @@ public class GuiHudModPosition extends GuiScreen {
 		return false;
 	}
 	
-	private void adjustBounds(IHudItem item, ScreenPosition pos) {
+	private void adjustBounds(ModDraggable item, ScreenPosition pos) {
 		ScaledResolution res = new ScaledResolution(Minecraft.getMinecraft());
 		
 		int screenWidth = res.getScaledWidth();

@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.util.ecf;
+import net.minecraft.util.EnumChatFormatting;
 
 /**
  * Graphical User Interface for the Hud Main Menu.i
@@ -19,19 +19,20 @@ import net.minecraft.util.ecf;
  */
 public class GuiHudMainMenu extends GuiScreen {
    
+	// Abreviations for code brevity.    
+	private static Minecraft mc = Minecraft.getMinecraft();
+		
     // local constants
     private final int ID_POSITIONS = 0;
 	private final int ID_STATUS    = 1;
 	private final int SPACING = 2;
 	private final int BTN_HEIGHT = 20;
 	private final int BTN_WIDTH = 200;
-	private final String TITLE = ecf.BOLD + "" + ecf.AQUA + "*" + ecf.BOLD +
-                                 ecf.DARK_AQUA + " CryoHud " + ecf.BOLD + 
-                                 ecf.AQUA + "*";
+	private final String TITLE = EnumChatFormatting.BOLD + "" + EnumChatFormatting.AQUA + "*" + EnumChatFormatting.BOLD +
+                                 EnumChatFormatting.DARK_AQUA + " CryoHud " + EnumChatFormatting.BOLD + 
+                                 EnumChatFormatting.AQUA + "*";
 	
-    // Abreviations for code brevity.    
-	private static Minecraft mc = Minecraft.getMinecraft();
-	private static EnumChatFormatting ecf;
+   
     
     // Positions for gui components.
     private ScaledResolution sr;
