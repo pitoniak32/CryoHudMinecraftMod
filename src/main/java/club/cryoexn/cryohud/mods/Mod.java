@@ -26,6 +26,9 @@ public class Mod {
 			MinecraftForge.EVENT_BUS.unregister(this);
 		}
 	}
+
+    public abstract ScreenPosition load();
+    public abstract void save();
 	
 	public boolean isEnabled() {
 		return isEnabled;
