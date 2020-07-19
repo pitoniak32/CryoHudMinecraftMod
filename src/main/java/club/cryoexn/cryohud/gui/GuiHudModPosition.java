@@ -10,13 +10,20 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 
+/**
+ * Graphical User Interface allows user to reposition mods on the screen with mouse dragging.
+ *
+ * @author David Pitoniak (Cryoexn)
+ */
 public class GuiHudModPosition extends GuiScreen {
 	
 	private static Minecraft mc = Minecraft.getMinecraft();
-	private ArrayList<ModDraggable> hudItems;
+	
+    private ArrayList<ModDraggable> hudItems;
 	private ModDraggable selMod;
 	private int prevX, prevY;
 	
+    // Default Constructor.
 	public GuiHudModPosition(ArrayList<ModDraggable> hudItems) {
 		this.hudItems = hudItems;
 	}
@@ -146,4 +153,5 @@ public class GuiHudModPosition extends GuiScreen {
 		
 		return null;
 	}
-}
+
+} // end GuiHudModPosition.
