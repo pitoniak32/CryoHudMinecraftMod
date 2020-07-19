@@ -14,11 +14,16 @@ import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
+/**
+ * Graphical User Interface allows user to change color and background status for each hud mod that it applies to.
+ *
+ * @author David Pitoniak (Cryoexn)
+ */
 public class GuiHudModSettingsMenu extends GuiScreen {
-
+    
+    //local constants
 	private final int COLOR_ENABLED = 0x9dff7d;
 	private final int COLOR_DISABLED = 0xff837d;
-	
 	private final int BTN_WIDTH = 100;
 	private final int BTN_HEIGHT = 20;
 	
@@ -26,7 +31,8 @@ public class GuiHudModSettingsMenu extends GuiScreen {
 	private ScaledResolution sr;
 	private ScreenPosition btnsPos;
 	private GuiTextField text;
-	
+
+    // Default Constructor.    
 	public GuiHudModSettingsMenu(ModDraggable mod) {
 		this.mod = mod;
 	}
@@ -156,4 +162,4 @@ public class GuiHudModSettingsMenu extends GuiScreen {
 		this.text.mouseClicked(mouseX, mouseY, mouseButton);
 	}
 	
-}
+} // end GuiHudModSettingsMenu.
