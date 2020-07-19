@@ -16,37 +16,29 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.ScaledResolution;
 
+/**
+ * Graphical User Interface for list of active mods. 
+ * Allows user to enable and disable hud mods and access the settings menu for applicable mods.
+ * 
+ * @author David Pitoniak (Cryoexn)
+ */
 public class GuiHudModListMenu extends GuiScreen {
-
+    
+    // local constants
 	private final int COLOR_ENABLED = 0x9dff7d;
-	private final int COLOR_DISABLED = 0xff837d;
-	
+	private final int COLOR_DISABLED = 0xff837d;	
 	private final int BTN_HEIGHT = 20;
 	private final int BTN_WIDTH = 150;
 	private final int BTN_SML_WIDTH = 75;
 	
 	private ArrayList<ModDraggable> mods;
-	
+    
+    // Default Constructor    
 	public GuiHudModListMenu(ArrayList<ModDraggable> mods) {
 		this.mods = mods;
 	}
-	
-	@Override
-	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-		super.drawDefaultBackground();
-		super.drawScreen(mouseX, mouseY, partialTicks);
-	}
 
-	@Override
-	protected void keyTyped(char typedChar, int keyCode) throws IOException {
-
-		if(keyCode == Keyboard.KEY_ESCAPE) {
-			mc.displayGuiScreen(new GuiHudMainMenu());
-			mc.updateDisplay();
-		}
-	}
-
-	@Override
+    @Override
 	public void initGui() {
 		int posIndex = 0;
 		int idIndex  = 0;
@@ -79,13 +71,23 @@ public class GuiHudModListMenu extends GuiScreen {
 	}
 
 	@Override
-	public void updateScreen() {
-		super.updateScreen();
+	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+		super.drawDefaultBackground();
+		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 
 	@Override
-	public void onGuiClosed() {
-		super.onGuiClosed();
+	protected void keyTyped(char typedChar, int keyCode) throws IOException {
+
+		if(keyCode == Keyboard.KEY_ESCAPE) {
+			mc.displayGuiScreen(new GuiHudMainMenu());
+			mc.updateDisplay();
+		}
+	}
+
+	@Override
+	public void updateScreen() {
+		super.updateScreen();
 	}
 
 	@Override
