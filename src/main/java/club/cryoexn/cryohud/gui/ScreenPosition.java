@@ -1,5 +1,11 @@
 package club.cryoexn.cryohud.gui;
 
+/**
+ * Modified ScreenPositon class
+ *
+ * @author OrangeMarshall (original)
+ * @author David Pitoniak (editied)
+ */
 public class ScreenPosition {
 
 	private double x, y;
@@ -37,4 +43,5 @@ public class ScreenPosition {
 		this.x = (double)x;
 		this.y = (double)y;
 	}
-}
+
+} // end ScreenPosition.
