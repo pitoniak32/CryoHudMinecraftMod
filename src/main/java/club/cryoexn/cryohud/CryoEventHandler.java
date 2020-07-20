@@ -20,15 +20,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class CryoEventHandler {
 	
-	@SubscribeEvent
+    /**
+     * Receive all chat events from minecraft.
+     */
+    @SubscribeEvent
 	public void chatMessageEvent(ClientChatReceivedEvent e) {
 		String msg = e.message.getUnformattedText();
 
 		// Implement Night Quest Timer.
-		if(msg.contains("NIGHT QUEST!") && 
+        // Make sure that the chat message is the night quest message sent by the server.
+		if(msg.contains("NIGHT QUEST!") &&
 		   !userGenerated(msg) &&
 		   !CryoGlobals.HudMan.isQuestTimerStarted()) {
 			
+            // TODO: Maybe make the quest text show the progression?
 			CryoGlobals.HudMan.startQuestTimer(msg.substring(msg.indexOf('!') + 2));
 		}
 	}
@@ -60,7 +65,8 @@ public class CryoEventHandler {
 		
 		// Remove the lighting glitch on items.
 		RenderHelper.enableGUIStandardItemLighting();
-		
+	    
+        // Render the active item hud mods.    
 		CryoGlobals.HudMan.renderArmor();
 		CryoGlobals.HudMan.renderHeldItem();
 
@@ -76,10 +82,9 @@ public class CryoEventHandler {
 	    // check each enumerated key binding type for pressed and take appropriate action
 	    if (keyBindings[0].isPressed()) 
 	    {
-	    	// Open the drag menu for HUD items.
-	        //CryoGlobals.HudMan.openConfigScreen();
+	    	// Open the main menu for HUD items.
 	        CryoGlobals.HudMan.openConfigMenu();
 	    }
 	}
 	
-}// end CryoEventHandler.
+} // end CryoEventHandler.
