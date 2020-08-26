@@ -5,7 +5,7 @@ This mod was written in java using the forge mod libraries. It is designed to gi
 
 ## Features
 ### Configuration
-all components can be moved around anywhere on the screen with a programmable hot key in the Minecraft controls setting (Default Y). All text items can be given a slightly translucent black background, and the text color can be changed to any hex value omitting the prepended '0x'
+all components can be moved around anywhere on the screen with a programmable hot key in the Minecraft controls setting (Default Y). All components can be toggled on or off. All text items can be given a slightly translucent black background, and the text color can be changed to any hex value omitting the prepended '0x'
 
 
 ![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/exconfmenu.png "Hud Menu")
@@ -37,7 +37,7 @@ Allows the user to see their X Y Z position in the world without opening their F
 Allows the user to see their Facing Direction in the world without opening their F3 Debug menu.
 
 #### Hypixel Pit Night Quests
-There is also a feature for quests on a certain mini game that displays a counter so the player knows how long they have to do the quest.
+There is also a feature for quests on a certain mini game that displays a counter so the player knows how long they have to do the quest. This is activated based on a chat message from the server.
 
 
 ![modscreenie](https://github.com/Cryoexn/CryoHudMinecraftMod/blob/master/screenies/exnq.png "CryoHud")
